@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+input{
+    outline: none;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+.clearfix{
+    *zoom: 1;  /*ie6，ie7*/
+}
+a:hover{
+    cursor: pointer;
+}
