@@ -37,6 +37,10 @@
 .lg-header-nav-middle{
     float: left;
 }
+.lg-header-nav-middle li a.current{
+    background-color: rgb(36,40,44);
+    color: #fff;
+}
 .lg-header-nav-right{
     float: right;
 }
@@ -81,3 +85,348 @@
     height: 100%;
     line-height: 40px;
 }
+/* 头部区域 */
+
+
+
+
+/* banner区域 */
+.lg-banner{
+    height: 120px;
+    background-color: #0dca9f;
+}
+.lg-banner-inner{
+    height: 100%;
+    width: 1210px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.lg-banner-inner-left{
+    display: flex;
+    justify-content: flex-start;
+    color:#fff;
+}
+.lg-banner-inner-left .desc{
+    align-self: center;
+}
+.lg-banner-inner-right{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+}
+.lg-banner-inner-right .search-input-area,
+.lg-banner-inner-right .verifyCode
+{
+    background-color: #fff;
+    margin-right: 10px;
+}
+.lg-banner-inner-right .search-input-area span,
+.lg-banner-inner-right .verifyCode span{
+    color: #AFB5C0;
+    display: inline-block;
+    padding: 10px 0;
+    padding-left: 10px;
+}
+
+.lg-banner-inner-right .search-input-area span:hover{
+    cursor: pointer;
+}
+.lg-banner-inner-right .search-input-area i{
+    color: #AFB5C0;
+}
+.lg-banner-inner-right .search-input-area input,
+.lg-banner-inner-right .verifyCode input
+{
+    padding: 10px;
+    color: #AFB5C0;
+}
+.lg-banner-inner-right .verifyCode input{
+    width: 70px;
+}
+.lg-banner-inner-right .verifyCode span{
+    color: #0dca9f;
+    padding-right: 12px;
+}
+.lg-banner-inner-right .login-register span{
+    padding: 9px 20px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+}
+.lg-banner-inner-right .login-register span:hover{
+    cursor: pointer;
+}
+/* banner区域 */
+
+
+
+/* 搜索区域 */
+.lg-search{
+    height: 120px;
+    background-color: rgb(242, 245, 244);
+}
+.lg-search .inner{
+    width: 1210px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.lg-search .search-area{
+    /* margin: 0 auto; */
+    margin-top: 40px;
+    
+}
+.lg-search .inner .search-area input:first-child{
+    width: 795px;
+    height: 50px;
+    color: #AFB5C0;
+    font-size: 18px;
+    padding-left: 15px;
+}
+.lg-search .inner .search-area input:last-child{
+    width: 140px;
+    background-color: #0dca9f;
+    color: #fff;
+    height: 50px;
+    font-size: 18px;
+    margin-left: -8px;
+    position: relative;
+    top: 2px;
+}
+.lg-search .inner .search-area input:first-child:focus{
+    outline: 1px solid #0dca9f;
+}
+.lg-search .inner .search-area input:last-child:hover{
+    cursor: pointer;
+}
+/* 搜索区域 */
+
+
+/* 职位列表与轮播图区域 */
+.lg-jobs-list{
+    padding-top: 40px;
+}
+.lg-jobs-list .inner{
+    width: 1210px;
+    margin: 0 auto;
+    /* background-color: #ff7452;
+    height: 20px; */
+    display: flex;
+    justify-content: space-between;
+}
+.lg-jobs-list .inner .jobs-list{
+    width: 310px;
+}
+.lg-jobs-list .jobs-list .jobs-list-nav{
+    width: 310px;
+}
+.lg-jobs-list .jobs-list .jobs-list-nav>li{
+    position: relative;
+    height: 48px;
+    line-height: 48px;
+    padding-left: 10px;
+}
+.lg-jobs-list .jobs-list .jobs-list-nav>li:hover{
+    box-shadow: 0 0 4px #cccccc; 
+}
+
+/* 更多职位列表 */
+.lg-jobs-list .jobs-list .jobs-list-nav>li .more-jobs{
+    display: none;
+    padding: 0 20px;
+    position: absolute;
+    top: 0;
+    left: 310px;
+    box-shadow: -1px 0 4px #cccccc; 
+    width: 625px;
+    background-color: #fff;
+    z-index: 999;
+}
+.lg-jobs-list .jobs-list .jobs-list-nav>li .more-jobs .cover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 48px;
+    width: 10px;
+    background-color: #fff;
+    transform: translateX(-50%);
+}
+.lg-jobs-list .jobs-list .jobs-list-nav>li:hover .more-jobs{
+    display: block;
+}
+.lg-jobs-list .jobs-list .jobs-list-nav>li span:first-child{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.lg-jobs-list .jobs-list .jobs-list-nav>li a{
+    color: #555555;
+    font-size: 14px;
+    margin-right: 15px;
+}
+.lg-jobs-list .jobs-list .jobs-list-nav>li a:hover{
+    text-decoration: underline;
+    color: #0dca9f;
+}
+.lg-jobs-list .jobs-list .jobs-list-nav>li span:nth-of-type(2){
+    position: absolute;
+    color: #555555;
+    right: 8px;
+    top: 3px;
+}
+.lg-jobs-list .more-jobs h1{
+    font-size: 14px;
+    font-weight: normal;
+    padding: 0;
+    height: 48px;
+    line-height: 48px;
+}
+.lg-jobs-list .more-jobs li{
+    line-height: 30px;
+}
+
+/* 轮播图区域 */
+.lg-jobs-list .inner .slideshow{
+    margin-top: 20px;
+    position: relative;
+    width: 840px;
+    height: 364px;
+    overflow: hidden;
+}
+/* 轮播的图片 */
+.lg-jobs-list .slideshow .container{
+    width: calc(840px * 2);
+    
+}
+.lg-jobs-list .slideshow .container li{
+    float: left;
+}
+.lg-jobs-list .slideshow .container li img{
+    vertical-align: middle;
+}
+/* 左右箭头 */
+.lg-jobs-list .slideshow .left-arrow,
+.lg-jobs-list .slideshow .right-arrow{
+    position: absolute;
+    display: none;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 80px;
+    color: rgba(255, 255, 255, .3);
+    font-size: 60px;
+}
+.lg-jobs-list .slideshow:hover .left-arrow,
+.lg-jobs-list .slideshow:hover .right-arrow{
+    display: block;
+}
+.lg-jobs-list .slideshow .left-arrow{
+    left: 20px;
+}
+.lg-jobs-list .slideshow .right-arrow{
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.lg-jobs-list .slideshow .left-arrow:hover,
+.lg-jobs-list .slideshow .right-arrow:hover{
+    color: #ffffff;
+    cursor: pointer;
+}
+/* 指示器 */
+.lg-jobs-list .slideshow .indicator{
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+}
+.lg-jobs-list .slideshow .indicator li{
+    width: 7px;
+    height: 7px;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+}
+.lg-jobs-list .slideshow .indicator li:hover{
+    background-color: rgba(255, 255, 255, 1);
+}
+.lg-jobs-list .slideshow .indicator li.current{
+    width: 15px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+}
+/* 职位列表与轮播图区域 */
+
+
+
+
+
+/* 职位推荐区域 */
+.lg-jobs-recommend .inner{
+    width: 1210px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+/* 标签栏 */
+.lg-jobs-recommend .tab-nav{
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #cccccc;
+    
+}
+.lg-jobs-recommend .tab-nav-item:first-child{
+    padding-left: 10px;
+}
+.lg-jobs-recommend .tab-nav .tab-nav-item{
+    float: left;
+    height: calc(100% - 2px);
+    margin-right: 40px;
+    color: #cccccc;
+}
+.lg-jobs-recommend .tab-nav .tab-nav-item:hover{
+    cursor: pointer;
+}
+.lg-jobs-recommend .tab-nav .tab-nav-item.current{
+    color: black;
+    border-bottom: 2px solid black;
+}
+/* 标签栏对应的内容区域 */
+.lg-jobs-recommend .tab-content{
+    /* display: flex;这里用的flex，但是不确定div个数，容器高度无法确定，难以用flex布局
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    height: 700px; */
+    margin-top: 30px;
+    width: 100%;
+    /* 采用浮动 */
+}
+.lg-jobs-recommend .tab-content div{
+    float: left;
+    width: calc((100% / 3) - 20px);
+    height: 200px;
+    border: 1px solid #cccccc;
+    margin-bottom: 20px;
+}
+.lg-jobs-recommend .tab-content div:nth-child(3n+2){
+    margin-left: 27px;
+    margin-right: 27px;
+}
+.lg-jobs-recommend .tab-content div:last-child{
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #0dca9f;
+    border: 1px solid #0dca9f;
+    transform: translateX(100%);
+    margin-left: 27px;
+}
+.lg-jobs-recommend .tab-content div:last-child:hover{
+    background-color: #0dca9f;
+    cursor: pointer;
+    color: #fff;
+}
+/* 职位推荐区域 */
