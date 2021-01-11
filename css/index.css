@@ -3,6 +3,11 @@
     height: 40px;
     background-color: #333;
     color: #AFB5C0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
 }
 .lg-header-nav{
     height: 100%;
@@ -848,3 +853,100 @@
 
 
 /* 备案信息区域 */
+
+
+
+
+/* 右侧固定栏 */
+.lg-fix-right{
+    width: 50px;
+    box-shadow: 0 0 3px #cccccc;
+    position: fixed;
+    right: 0%;
+    top:40px;
+    height: 100%;
+    background-color: #fff;
+    padding-top: 100px;
+}
+.lg-fix-right>div{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+}
+.lg-fix-right>div>i{
+    font-size: 20px;
+}
+.lg-fix-right>div>i:hover{
+    color: #0dca9f;
+    cursor: pointer;
+}
+.lg-fix-right div.erweima{
+    margin-top: 40px;
+    position: relative;
+}
+.lg-fix-right .shoucang .tip,
+.lg-fix-right .zhifeiji .tip,
+.lg-fix-right .act_yaoyuenew .tip,
+.lg-fix-right .dingyue .tip
+{
+    position: absolute;
+    padding: 7px;
+    left: 0;
+    top: 60%;
+    font-size: 12px;
+    width: 60px;
+    background-color: #fff;
+    transform: translate(-120%,-50%);
+    box-shadow: 0 0 4px #ccc;
+    display: none;
+}
+.lg-fix-right .shoucang i:hover+.tip,
+.lg-fix-right .zhifeiji i:hover+.tip,
+.lg-fix-right .act_yaoyuenew i:hover+.tip,
+.lg-fix-right .dingyue i:hover+.tip
+{
+    display: block;
+}
+.lg-fix-right .shoucang .tip .sanjiao,
+.lg-fix-right .zhifeiji .tip .sanjiao,
+.lg-fix-right .act_yaoyuenew .tip .sanjiao,
+.lg-fix-right .dingyue .tip .sanjiao
+{
+    width: 0;
+    height: 0;
+    border: 5px solid #fff;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    position: absolute;
+    right: 0;
+    top:50%;
+    transform: translate(100%,-50%);
+}
+.lg-fix-right .erweima .erweima-img{
+    width: 150px;
+    height: 200px;
+    padding: 8px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-110%,0);
+    text-align: center;
+    display: none;
+    background-color: #fff;
+}
+.lg-fix-right .erweima i:hover+.erweima-img{
+    display: block;
+}
+.lg-fix-right .erweima .erweima-img img{
+    width: 100%;
+    box-shadow: 0 0 4px #aaaaaa;
+}
+.lg-fix-right .erweima .erweima-img h5{
+    font-size: 20px;
+    font-weight: normal;
+    color:#aaaaaa
+}
+
+/* 右侧固定栏 */

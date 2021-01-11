@@ -30,7 +30,8 @@ a:hover{
     cursor: pointer;
 }
 
-/* 
+
 body{
-    height: 3000px;
-} */
+    /* height: 3000px; */
+    padding-top: 40px;
+}
