@@ -6,6 +6,27 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "5118311",
+      "name": "下载",
+      "font_class": "xiazai",
+      "unicode": "e680",
+      "unicode_decimal": 59008
+    },
+    {
+      "icon_id": "6154432",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e82c",
+      "unicode_decimal": 59436
+    },
+    {
+      "icon_id": "6756291",
+      "name": "微博",
+      "font_class": "weibo",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
       "icon_id": "485763",
       "name": "收 藏",
       "font_class": "shoucang",

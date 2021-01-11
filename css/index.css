@@ -402,31 +402,449 @@
     height: 700px; */
     margin-top: 30px;
     width: 100%;
+    display: none;
+    position: relative;
+    margin-bottom: 60px;
     /* 采用浮动 */
 }
-.lg-jobs-recommend .tab-content div{
+.lg-jobs-recommend .tab-content.current{
+    display: block;
+}
+.lg-jobs-recommend .tab-content>.job-pane{
     float: left;
     width: calc((100% / 3) - 20px);
     height: 200px;
     border: 1px solid #cccccc;
     margin-bottom: 20px;
+    box-sizing: border-box;
+    position: relative;
+    padding: 15px;
 }
-.lg-jobs-recommend .tab-content div:nth-child(3n+2){
+.lg-jobs-recommend .tab-content>.job-pane:hover{
+    box-shadow: 0 0 3px #cccccc;
+}
+.lg-jobs-recommend .tab-content>.job-pane:nth-child(3n+2){
     margin-left: 27px;
     margin-right: 27px;
 }
-.lg-jobs-recommend .tab-content div:last-child{
+.lg-jobs-recommend .tab-content .watch-more{
+    position: absolute;
+    left: 50%;
     height: 50px;
     text-align: center;
     line-height: 50px;
     color: #0dca9f;
     border: 1px solid #0dca9f;
-    transform: translateX(100%);
-    margin-left: 27px;
+    transform: translateX(-51%);
+    bottom: -50px;
+    padding: 0;
+    width: 380px;
 }
-.lg-jobs-recommend .tab-content div:last-child:hover{
+.lg-jobs-recommend .tab-content .watch-more:hover{
     background-color: #0dca9f;
     cursor: pointer;
     color: #fff;
 }
+/* 职位要求面板 */
+.lg-jobs-recommend .tab-content .job-pane span.zhizhao{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background: url('../images/zhizhao.png') no-repeat;
+    background-size: cover;
+}
+.lg-jobs-recommend .tab-content .job-pane p.header {
+    margin-top: 10px;
+    
+}
+.lg-jobs-recommend .tab-content .job-pane p.header img{
+    vertical-align: middle;
+}
+.lg-jobs-recommend .tab-content .job-pane p.header .salary{
+    color:red;
+    float: right;
+}
+.lg-jobs-recommend .tab-content .job-pane p.header .publish-time{
+    color: gray;
+
+}
+.lg-jobs-recommend .tab-content .job-pane p:nth-of-type(2){
+    color: #cccccc;
+    margin: 10px 0;
+}
+.lg-jobs-recommend .tab-content .job-pane .tag{
+    display: block;
+    width: 80px;
+    height: 28px;
+    line-height: 28px;
+    border: 1px solid #eeeeee;
+    text-align: center;
+    color: #cccccc;
+    font-size: 12px;
+}
+.lg-jobs-recommend .tab-content .job-pane .dashed-line{
+    border-top: 1px dashed #cccccc;
+    height: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.lg-jobs-recommend .tab-content .job-pane .bottom{
+    display: flex;
+}
+.lg-jobs-recommend .tab-content .job-pane .bottom img{
+    width: 40px;
+    height: 40px;
+}
+.lg-jobs-recommend .tab-content .job-pane .bottom .right{
+    color: #333333;
+}
+.lg-jobs-recommend .tab-content .job-pane .bottom .right p:last-child{
+    color: #aaaaaa;
+    margin: 0;
+}
+.lg-jobs-recommend .tab-content .job-pane .bottom .right p{
+    padding-left: 10px;
+}
 /* 职位推荐区域 */
+
+
+
+
+
+/* 互联网热门公司榜 */
+.lg-hot-company .inner{
+    width: 1210px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+/* 标签栏 */
+.lg-hot-company .tab-nav{
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #cccccc;
+    
+}
+.lg-hot-company .tab-nav-item:first-child{
+    padding-left: 10px;
+}
+.lg-hot-company .tab-nav .tab-nav-item{
+    float: left;
+    height: calc(100% - 2px);
+    margin-right: 40px;
+    color: #cccccc;
+}
+.lg-hot-company .tab-nav .tab-nav-item:hover{
+    cursor: pointer;
+}
+.lg-hot-company .tab-nav .tab-nav-item.current{
+    color: black;
+    border-bottom: 2px solid black;
+}
+/* 标签栏对应的内容区域 */
+.lg-hot-company .tab-content{
+    margin-top: 30px;
+    width: 100%;
+    display: none;
+    position: relative;
+    margin-bottom: 80px;
+}
+.lg-hot-company .tab-content.current{
+    display: block;
+}
+.lg-hot-company .tab-content .company-pane{
+    width: calc((100% / 4) - 20px);
+    /* height: 200px; */
+    border: 1px solid #cccccc;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    position: relative;
+    padding: 15px;
+    float: left;
+    margin-right: 26px;
+    padding: 15px;
+}
+.lg-hot-company .tab-content .company-pane:hover{
+    box-shadow: 0 0 3px #cccccc;
+}
+.lg-hot-company .tab-content .company-pane:nth-child(4n){
+    margin-right: 0;
+}
+.lg-hot-company .company-pane .logo{
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin:0 auto;
+    margin-top: 10px;
+}
+.lg-hot-company .company-pane .logo:hover,
+.lg-hot-company .company-pane .name:hover{
+    cursor: pointer;
+}
+.lg-hot-company .company-pane .logo img{
+    width: 100%;
+}
+.lg-hot-company .company-pane .name{
+    display: block;
+    width: 100%;
+    color: #333333;
+    text-align: center;
+    margin: 10px 0 5px 0;
+}
+.lg-hot-company .company-pane .title{
+    text-align: center;
+    color: #cccccc;
+    margin-bottom: 5px;
+
+}
+.lg-hot-company .company-pane .desc{
+    white-space: nowrap;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 10px;
+}
+.lg-hot-company .company-pane .footer{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    border-top: 1px dashed #cccccc;
+}
+.lg-hot-company .company-pane .footer a{
+    color: #cccccc;
+}
+.lg-hot-company .company-pane .footer a:nth-child(2){
+    padding: 0 25px;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+}
+.lg-hot-company .company-pane .footer a h4{
+    text-align: center;
+    color: #0dca9f;
+    font-weight: normal;
+    font-size: 16px;
+}
+.lg-hot-company .company-pane .footer a:hover{
+    color: #0dca9f;
+    cursor: pointer;
+}
+.lg-hot-company .company-pane .footer a p{
+    font-size: 12px;
+}
+.lg-hot-company .tab-content .watch-more{
+    width: 390px;
+    height: 45px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    bottom:-45px;
+    transform: translateX(-50%);
+    border: 1px solid #0dca9f;
+    text-align: center;
+    line-height: 45px;
+}
+.lg-hot-company .tab-content .watch-more:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #0dca9f;
+}
+/* 互联网热门公司榜 */
+
+
+
+
+/* 链接区域 */
+.lg-links .inner{
+    width: 1210px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+.lg-links .inner .tab-nav{
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid #cccccc;
+}
+.lg-links .inner .tab-nav-item{
+    float: left;
+    height: calc(100% - 2px);
+    margin-right: 40px;
+    color: #cccccc;
+}
+.lg-links .tab-nav .tab-nav-item:hover{
+    cursor: pointer;
+}
+.lg-links .tab-nav .tab-nav-item.current{
+    color: black;
+    border-bottom: 2px solid black;
+}
+.lg-links .inner{
+    margin-bottom: 100px
+}
+/* 标签栏对应的内容区域 */
+.lg-links .tab-content{
+    display: none;
+    margin-top: 30px;
+}
+.lg-links .tab-content.current{
+    display: block;
+}
+.lg-links .tab-content ul{
+    display: none;
+}
+.lg-links .tab-content .show-links li,
+.lg-links .tab-content .hide-links li{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+.lg-links .tab-content .show-links li a,
+.lg-links .tab-content .hide-links li a
+{
+    color: #333333;
+    font-size: 14px;
+}
+.lg-links .tab-content .show-links li a:hover,
+.lg-links .tab-content .hide-links li a:hover{
+    color: #0dca9f;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.lg-links .tab-content .show-links>.toggle{
+    float:right;
+    color: #cccccc;
+    font-size: 14px;
+}
+.lg-links .tab-content .show-links>.toggle:hover{
+    cursor: pointer;
+}
+.lg-links .tab-content .hide-links{
+    width: 1150px;
+}
+.lg-links .tab-content ul.active{
+    display: block;
+}
+/* 链接区域 */
+
+
+
+
+
+
+/* 底部区域 */
+.lg-footer {
+    border-top: 1px solid #cccccc;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.lg-footer .inner{
+    width: 1210px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.lg-footer .inner>div{
+    width: calc(100% / 4);
+}
+.lg-footer .inner>div a{
+    color: #666666;
+}
+.lg-footer .inner>div h3{
+    color: #555555;
+}
+.lg-footer .download{
+    padding-right: 100px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-right: 1px solid #cccccc;
+}
+.lg-footer .download a:nth-child(1),
+.lg-footer .download a:nth-child(2){
+    display: block;
+    padding: 10px 30px;
+    color: #0dca9f;
+    border: 1px solid #0dca9f;
+    margin-bottom: 15px;
+}
+.lg-footer .download a:nth-child(1):hover,
+.lg-footer .download a:nth-child(2):hover{
+    color:#fff;
+    background-color: #0dca9f;
+}
+.lg-footer .download a:nth-child(3):hover,
+.lg-footer .download a:nth-child(4):hover{
+    color: #0dca9f;
+}
+
+.lg-footer .services,
+.lg-footer .help,
+.lg-footer .contact{
+    padding-left: 100px;
+    box-sizing: border-box;
+    /* display: flex;
+    flex-direction: column; */
+}
+.lg-footer .services h3,
+.lg-footer .help h3,
+.lg-footer .contact h3{
+    /* text-align: center; */
+    margin-bottom: 20px;
+}
+.lg-footer .services a,
+.lg-footer .help a,
+.lg-footer .contact a{
+    display: inline-block;
+    font-size: 14px;
+    /* text-align: center; */
+    margin-bottom: 10px;
+    margin-right: auto;
+}
+.lg-footer .contact p{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.lg-footer .services a:hover,
+.lg-footer .help a:hover,
+.lg-footer .contact a:hover{
+    color: #0dca9f;
+}
+/* 底部区域 */
+
+
+
+
+/* 备案信息区域 */
+.lg-beian{
+    background-color: rgb(250, 250, 250);
+}
+.lg-beian .inner{
+    width: 1210px;
+    margin: 0 auto;
+    color: #aaaaaa;
+}
+.lg-beian .inner a{
+    color: #aaaaaa;
+    margin: 0 15px;
+}
+.lg-beian .inner a:hover{
+    color: #555;
+}
+.lg-beian .inner li:nth-child(1){
+    float: left;
+    height: 70px;
+    line-height: 70px;
+}
+.lg-beian .inner li:nth-child(2){
+    float: left;
+    border: 1px solid #cccccc;
+    padding: 10px;
+    font-size: 12px;
+}
+.lg-beian .inner li:nth-child(3){
+    float: right;
+    height: 70px;
+    line-height: 70px;
+}
+
+
+/* 备案信息区域 */
