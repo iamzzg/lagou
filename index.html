@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="font/iconfont.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/slideshow.css">
     <title>拉勾网</title>
 </head>
 <body>
@@ -42,7 +43,7 @@
             <!-- 头部右边区域 -->
             <ul class="lg-header-nav-right">
                 <li><a href="#">上传附件简历</a></li>
-                <li><a href="#">
+                <li><a href="#" id="login">
                     <i class="iconfont icon-yiliaohangyedeICON-"></i>
                     <span>登录</span>
                 </a></li>
@@ -378,20 +379,13 @@
                 </ul>
             </div>
             <!-- 轮播图 -->
-            <div class="slideshow">
+            <div class="slideshow" id="slider1">
                 <!-- 图片 -->
-                <ul class="container clearfix">
-                    <li><a href="#"><img src="./images/lunbo1.JPG" alt=""></a></li>
-                    <li><a href="#"><img src="./images/lunbo2.PNG" alt=""></a></li>
-                </ul>
-                <!-- 左右箭头 -->
-                <span class="left-arrow">&lt;</span>
-                <span class="right-arrow">&gt;</span>
-                <!-- 指示器 -->
-                <ul class="indicator clearfix">
-                    <li class="current"></li>
-                    <li></li>
-                </ul>
+                <div class="container">
+                    <div><a href="#"><img src="./images/lunbo1.JPG" alt=""></a></div>
+                    <div><a href="#"><img src="./images/lunbo2.PNG" alt=""></a></div>
+                    <div><a href="#"><img src="./images/lunbo3.PNG" alt=""></a></div>
+                </div>
             </div>
         </div>
     </section>
@@ -1074,6 +1068,43 @@
             </div>
         </div>
     </div>
+
+
+    <!-- 登录页 -->
+    <div id="login_page">
+        <a href="#" class="wx-login">
+            <span></span>
+            <span></span>
+        </a>
+        <span class="close">×</span>
+        <div class="logo-img"></div>
+        <div class="input-area">
+            <input type="text" placeholder="请输入常用手机号/邮箱">
+        <input type="password" placeholder="请输入密码">
+        </div>
+        <div class="phone-verify-code">
+            <span>手机验证码登录</span>
+            <a href="#">忘记密码？</a>
+        </div>
+        <button class="login-btn">登录</button>
+        <button class="reg-btn">立即注册</button>
+        <div class="third-account">
+           <ul class="clearfix">
+               <li>第三方账号</li>
+               <li><a href="" class="weibo" title="使用微博账号登录"></a></li>
+               <li><a href="" class="weixin" title="使用微信账号登录"></a></li>
+               <li><a href="" class="qq" title="使用QQ账号登录"></a></li>
+               <li><a href="" class="baidu" title="使用百度账号登录"></a></li>
+           </ul> 
+        </div>
+    </div>
+
+    <!-- 注册页 -->
+
+    <!-- 遮罩层 -->
+    <div id="mask"></div>
+    <script src="js/A.js"></script>
+    <script src="js/slideshow.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>

@@ -294,13 +294,10 @@
 /* 轮播图区域 */
 .lg-jobs-list .inner .slideshow{
     margin-top: 20px;
-    position: relative;
-    width: 840px;
-    height: 364px;
-    overflow: hidden;
+    
 }
 /* 轮播的图片 */
-.lg-jobs-list .slideshow .container{
+/* .lg-jobs-list .slideshow .container{
     width: calc(840px * 2);
     
 }
@@ -309,9 +306,9 @@
 }
 .lg-jobs-list .slideshow .container li img{
     vertical-align: middle;
-}
+} */
 /* 左右箭头 */
-.lg-jobs-list .slideshow .left-arrow,
+/* .lg-jobs-list .slideshow .left-arrow,
 .lg-jobs-list .slideshow .right-arrow{
     position: absolute;
     display: none;
@@ -338,9 +335,9 @@
 .lg-jobs-list .slideshow .right-arrow:hover{
     color: #ffffff;
     cursor: pointer;
-}
+} */
 /* 指示器 */
-.lg-jobs-list .slideshow .indicator{
+/* .lg-jobs-list .slideshow .indicator{
     position: absolute;
     left: 50%;
     bottom: 30px;
@@ -361,7 +358,7 @@
     width: 15px;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 5px;
-}
+} */
 /* 职位列表与轮播图区域 */
 
 
@@ -867,6 +864,7 @@
     height: 100%;
     background-color: #fff;
     padding-top: 100px;
+    z-index: 999;
 }
 .lg-fix-right>div{
     font-size: 30px;
@@ -950,3 +948,190 @@
 }
 
 /* 右侧固定栏 */
+
+
+
+
+/* 登录页 */
+#login_page {
+    width: 440px;
+    height: 500px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9999;
+    border-radius: 3px;
+    padding: 8px 60px;
+    box-sizing: border-box;
+    display: none;
+}
+#login_page .close{
+    display: block;
+    font-size: 24px;
+    color: #aaaaaa;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    cursor: pointer;
+}
+#login_page .wx-login{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+#login_page .wx-login span:first-child{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: url('../images/popup-sprite_e5ea04f.png') no-repeat;
+    
+    background-position: -437px -263px;
+}
+#login_page .wx-login span:last-child{
+    display: inline-block;
+    width: 100px;
+    height: 60px;
+    background: url('../images/pop-sprite_login_reg.png') no-repeat;
+    background-position: -383px -262px;
+}
+#login_page .wx-login:hover span:first-child{
+    background-position: -331px -325px;
+}
+#login_page  .logo-img{
+    width: 100px;
+    height: 55px;
+    margin: 50px auto;
+    margin-bottom: 30px;
+    background-color: antiquewhite;
+    background: url('../images/popup-sprite_e5ea04f.png');
+    background-position: -333px -260px;
+}
+#login_page .input-area{
+    margin-bottom: 10px;
+}
+#login_page .input-area input{
+    width: 100%;
+    padding: 16px 22px;
+    font-size: 16px;
+    color: #AFB5C0;
+    background-color: rgb(244, 244, 244);
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    border: 1px solid rgb(244, 244, 244);
+}
+#login_page .input-area input:focus{
+    border: 1px solid #0dca9f;
+}
+
+.phone-verify-code{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+.phone-verify-code>span{
+    color: #0dca9f;
+    cursor: pointer;
+}
+.phone-verify-code>a{
+    color: #aaaaaa;
+}
+#login_page .login-btn{
+    outline: none;
+    background-color: #0dca9f;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #ffffff;
+    border-radius: 3px;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-size: 18px;
+}
+#login_page .login-btn:hover{
+    background-color: aquamarine;
+}
+#login_page .reg-btn{
+    outline: none;
+    background-color: #ffffff;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #aaaaaa;
+    border-radius: 3px;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+}
+#login_page .reg-btn:hover{
+    color: #0dca9f;
+}
+#login_page .third-account ul li{
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    margin-right: 20px;
+    color: #aaaaaa;
+    display: flex;
+    align-items: center;
+}
+#login_page .third-account a{
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+}
+#login_page .third-account .weibo{
+    background: url('../images/third-sprite_d07ffce.png') no-repeat;
+    /* -147px -76px */
+    background-position: -192px -76px;
+}
+#login_page .third-account .weixin{
+    background: url('../images/third-sprite_d07ffce.png') no-repeat;
+    /* -147px -76px */
+    background-position: -100px -200px;
+}
+#login_page .third-account .qq{
+    background: url('../images/third-sprite_d07ffce.png') no-repeat;
+    /* -147px -76px */
+    background-position: -192px -117px;
+}
+#login_page .third-account .baidu{
+    background: url('../images/third-sprite_d07ffce.png') no-repeat;
+    /* -147px -76px */
+    background-position: -14px -206px;;
+}
+/* 鼠标经过账号图标 */
+#login_page .third-account .weibo:hover{
+    background-position: -146px -76px;
+}
+#login_page .third-account .weixin:hover{
+    background-position: -147px -200px;
+}
+#login_page .third-account .qq:hover{
+    background-position: -192px -158px;
+}
+#login_page .third-account .baidu:hover{
+    background-position: -55px -206px;;
+}
+/* 登录页 */
+
+
+
+
+/* 遮罩层 */
+#mask {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, .5);
+    z-index: 999;
+    display: none;
+}
+/* 遮罩层 */

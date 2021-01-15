@@ -1,0 +1,84 @@
+.slideshow {
+    position: relative;
+    overflow: hidden;
+}
+/* 轮播的图片 */
+.slideshow .container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+.slideshow .container>div {
+    float: left;
+}
+
+.slideshow .container>div img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* 左右箭头 */
+.slideshow .left-arrow,
+.slideshow .right-arrow {
+    position: absolute;
+    display: none;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 80px;
+    color: rgba(255, 255, 255, .3);
+    font-size: 60px;
+}
+
+.slideshow:hover .left-arrow,
+.slideshow:hover .right-arrow {
+    display: block;
+}
+
+.slideshow .left-arrow {
+    left: 20px;
+}
+
+.slideshow .right-arrow {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slideshow .left-arrow:hover,
+.slideshow .right-arrow:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* 指示器 */
+.slideshow .indicator {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.slideshow .indicator>div {
+    width: 7px;
+    height: 7px;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+    
+}
+
+.slideshow .indicator>div:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.slideshow .indicator>div.current {
+    transition: all .5s;
+    width: 15px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 5px;
+}
